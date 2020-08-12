@@ -28,7 +28,7 @@
   
     
   
-  <meta name="description" content="Sr. Data Science Manager">
+  <meta name="description" content="Data Science Manager">
 
   
   <link rel="alternate" hreflang="de" href="/de/">
@@ -41,7 +41,7 @@
   
   
   
-  <meta name="theme-color" content="#3f51b5">
+  <meta name="theme-color" content="#0d6d89">
   
 
   
@@ -209,6 +209,44 @@
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175233930-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-175233930-1', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
 
@@ -239,7 +277,7 @@
   <meta property="og:site_name" content="Nachiket Kakirde">
   <meta property="og:url" content="/">
   <meta property="og:title" content="Nachiket Kakirde">
-  <meta property="og:description" content="Sr. Data Science Manager"><meta property="og:image" content="img/map[gravatar:%!s(bool=false) shape:circle]">
+  <meta property="og:description" content="Data Science Manager"><meta property="og:image" content="img/map[gravatar:%!s(bool=false) shape:circle]">
   <meta property="twitter:image" content="img/map[gravatar:%!s(bool=false) shape:circle]"><meta property="og:locale" content="en-us">
   
     <meta property="og:updated_time" content="2019-07-12T00:00:00&#43;00:00">
@@ -441,25 +479,16 @@
         
         
         
-          
-        
 
         
         
         
         
         
-        
-          
-          
-          
-            
-          
-          
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#featured" data-target="#featured"><span>Courses</span></a>
+          <a class="nav-link  active" href="/" data-target="[]"><span>Courses</span></a>
         </li>
 
         
@@ -479,7 +508,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link  active" href="/" data-target="[]"><span>My Dataviz</span></a>
+          <a class="nav-link  active" href="/" data-target="[]"><span>Dataviz</span></a>
         </li>
 
         
@@ -498,23 +527,6 @@
       </li>
       
 
-      
-      <li class="nav-item dropdown theme-dropdown">
-        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
-          <i class="fas fa-palette" aria-hidden="true"></i>
-        </a>
-        <div class="dropdown-menu">
-          <a href="#" class="dropdown-item js-set-theme-light">
-            <span>Light</span>
-          </a>
-          <a href="#" class="dropdown-item js-set-theme-dark">
-            <span>Dark</span>
-          </a>
-          <a href="#" class="dropdown-item js-set-theme-auto">
-            <span>Automatic</span>
-          </a>
-        </div>
-      </li>
       
 
       
@@ -626,7 +638,7 @@
 
       <div class="portrait-title">
         <h2>Nachiket Kakirde</h2>
-        <h3>Sr. Data Science Manager</h3>
+        <h3>Data Science Manager</h3>
 
         
         <h3>
@@ -861,7 +873,7 @@
       <div class="col py-2">
         <div class="card">
           <div class="card-body">
-            <h4 class="card-title exp-title text-muted mt-0 mb-1">Sr. Data Science Manager</h4>
+            <h4 class="card-title exp-title text-muted mt-0 mb-1">Data Science Manager</h4>
             <h4 class="card-title exp-company text-muted my-0"><a href="https://www.carlsberggroup.com/who-we-are/about-the-carlsberg-group/integrated-supply-chain/" target="_blank" rel="noopener">Carlsberg</a></h4>
             <div class="text-muted exp-meta">
               Jan 2015 –
@@ -875,9 +887,9 @@
             </div>
             <div class="card-text">Responsibilities include:</p>
 <ul>
-<li>Analysing</li>
-<li>Modelling</li>
-<li>Deploying</li>
+<li>ML based Demand Planning</li>
+<li>Timeseries Modelling</li>
+<li>Cost optimization</li>
 </ul></div>
           </div>
         </div>
@@ -1029,7 +1041,7 @@
   <div class="col-12 col-sm-4">
     <div class="featurette-icon"><i class="fab fa-r-project"></i></div>
     <h3>R</h3>
-    <p>90%</p>
+    <p>Expert</p>
   </div>
   
   
@@ -1040,7 +1052,7 @@
   <div class="col-12 col-sm-4">
     <div class="featurette-icon"><i class="fab fa-python"></i></div>
     <h3>Python</h3>
-    <p>Handson and production</p>
+    <p>Expert - Hands-on and production</p>
   </div>
   
   
@@ -1051,7 +1063,7 @@
   <div class="col-12 col-sm-4">
     <div class="featurette-icon"><i class="fas fa-chart-line"></i></div>
     <h3>Statistics</h3>
-    <p>100%</p>
+    <p>Hidden Strength</p>
   </div>
   
   
@@ -1071,8 +1083,8 @@
     
   
   <div class="col-12 col-sm-4">
-    <div class="featurette-icon"><i class="fas fa-fa-aws"></i></div>
-    <h3>Forecasting</h3>
+    <div class="featurette-icon"><i class="fab fa-docker"></i></div>
+    <h3>Doker</h3>
     <p>Expert</p>
   </div>
   
@@ -1082,9 +1094,20 @@
     
   
   <div class="col-12 col-sm-4">
-    <div class="featurette-icon"><i class="fas fa-fa-git"></i></div>
+    <div class="featurette-icon"><i class="fab fa-git-square"></i></div>
     <h3>git</h3>
     <p>Expert</p>
+  </div>
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-4">
+    <div class="featurette-icon"><i class="fab fa-aws"></i></div>
+    <h3>AWS</h3>
+    <p>User</p>
   </div>
   
   
@@ -1658,7 +1681,7 @@ Main Examples Code Academic supports a Markdown extension for highlighting code 
   <p class="powered-by">
     2020 &middot; 
 
-    Powered by the
+    Brewed with : muscle : and : beer :
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
     <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
 

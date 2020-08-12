@@ -28,7 +28,7 @@
   
     
   
-  <meta name="description" content="Sr. Data Science Manager">
+  <meta name="description" content="Data Science Manager">
 
   
   <link rel="alternate" hreflang="de" href="/de/authors/admin/">
@@ -41,7 +41,7 @@
   
   
   
-  <meta name="theme-color" content="#3f51b5">
+  <meta name="theme-color" content="#0d6d89">
   
 
   
@@ -209,6 +209,44 @@
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175233930-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-175233930-1', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
 
@@ -239,7 +277,7 @@
   <meta property="og:site_name" content="Nachiket Kakirde">
   <meta property="og:url" content="/authors/admin/">
   <meta property="og:title" content="Nachiket Kakirde | Nachiket Kakirde">
-  <meta property="og:description" content="Sr. Data Science Manager"><meta property="og:image" content="img/map[gravatar:%!s(bool=false) shape:circle]">
+  <meta property="og:description" content="Data Science Manager"><meta property="og:image" content="img/map[gravatar:%!s(bool=false) shape:circle]">
   <meta property="twitter:image" content="img/map[gravatar:%!s(bool=false) shape:circle]"><meta property="og:locale" content="en-us">
   
     
@@ -427,25 +465,16 @@
         
         
         
-          
-        
 
         
         
         
         
         
-        
-          
-          
-          
-            
-          
-          
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#featured"><span>Courses</span></a>
+          <a class="nav-link  active" href="/"><span>Courses</span></a>
         </li>
 
         
@@ -465,7 +494,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link  active" href="/"><span>My Dataviz</span></a>
+          <a class="nav-link  active" href="/"><span>Dataviz</span></a>
         </li>
 
         
@@ -484,23 +513,6 @@
       </li>
       
 
-      
-      <li class="nav-item dropdown theme-dropdown">
-        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
-          <i class="fas fa-palette" aria-hidden="true"></i>
-        </a>
-        <div class="dropdown-menu">
-          <a href="#" class="dropdown-item js-set-theme-light">
-            <span>Light</span>
-          </a>
-          <a href="#" class="dropdown-item js-set-theme-dark">
-            <span>Dark</span>
-          </a>
-          <a href="#" class="dropdown-item js-set-theme-auto">
-            <span>Automatic</span>
-          </a>
-        </div>
-      </li>
       
 
       
@@ -566,7 +578,7 @@
 
       <div class="portrait-title">
         <h2>Nachiket Kakirde</h2>
-        <h3>Sr. Data Science Manager</h3>
+        <h3>Data Science Manager</h3>
 
         
         <h3>
@@ -859,7 +871,7 @@
   <p class="powered-by">
     2020 &middot; 
 
-    Powered by the
+    Brewed with : muscle : and : beer :
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
     <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
 

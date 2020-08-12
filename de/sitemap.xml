@@ -48,6 +48,21 @@
   </url>
   
   <url>
+    <loc>/de/slides/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/de/slides/example/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/de/post/example/</loc>
+    <lastmod>2018-06-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/de/authors/admin/</loc>
     <xhtml:link
                 rel="alternate"
@@ -58,6 +73,21 @@
                 rel="alternate"
                 hreflang="de"
                 href="/de/authors/admin/"
+                />
+  </url>
+  
+  <url>
+    <loc>/de/courses/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/courses/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="/de/courses/"
                 />
   </url>
   

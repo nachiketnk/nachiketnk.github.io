@@ -44,7 +44,7 @@ Main Examples Code Academic supports a Markdown extension for highlighting code 
   
   
   
-  <meta name="theme-color" content="#3f51b5">
+  <meta name="theme-color" content="#0d6d89">
   
 
   
@@ -210,6 +210,44 @@ Main Examples Code Academic supports a Markdown extension for highlighting code 
   
 
 
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175233930-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-175233930-1', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
 
 
   
@@ -479,25 +517,16 @@ Main Examples Code Academic supports a Markdown extension for highlighting code 
         
         
         
-          
-        
 
         
         
         
         
         
-        
-          
-          
-          
-            
-          
-          
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#featured"><span>Courses</span></a>
+          <a class="nav-link  active" href="/"><span>Courses</span></a>
         </li>
 
         
@@ -517,7 +546,7 @@ Main Examples Code Academic supports a Markdown extension for highlighting code 
         
 
         <li class="nav-item">
-          <a class="nav-link  active" href="/"><span>My Dataviz</span></a>
+          <a class="nav-link  active" href="/"><span>Dataviz</span></a>
         </li>
 
         
@@ -536,23 +565,6 @@ Main Examples Code Academic supports a Markdown extension for highlighting code 
       </li>
       
 
-      
-      <li class="nav-item dropdown theme-dropdown">
-        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
-          <i class="fas fa-palette" aria-hidden="true"></i>
-        </a>
-        <div class="dropdown-menu">
-          <a href="#" class="dropdown-item js-set-theme-light">
-            <span>Light</span>
-          </a>
-          <a href="#" class="dropdown-item js-set-theme-dark">
-            <span>Dark</span>
-          </a>
-          <a href="#" class="dropdown-item js-set-theme-auto">
-            <span>Automatic</span>
-          </a>
-        </div>
-      </li>
       
 
       
@@ -1001,7 +1013,7 @@ A Markdown aside is useful for displaying notices, hints, or definitions to your
 
     <div class="media-body">
       <h5 class="card-title"><a href="/">Nachiket Kakirde</a></h5>
-      <h6 class="card-subtitle">Sr. Data Science Manager</h6>
+      <h6 class="card-subtitle">Data Science Manager</h6>
       <p class="card-text">My interests include distributed robotics, mobile computing and programmable matter.</p>
       <ul class="network-icon" aria-hidden="true">
   
@@ -1240,7 +1252,7 @@ A Markdown aside is useful for displaying notices, hints, or definitions to your
   <p class="powered-by">
     2020 &middot; 
 
-    Powered by the
+    Brewed with : muscle : and : beer :
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
     <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
 

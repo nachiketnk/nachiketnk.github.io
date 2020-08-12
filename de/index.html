@@ -41,7 +41,7 @@
   
   
   
-  <meta name="theme-color" content="#3f51b5">
+  <meta name="theme-color" content="#0d6d89">
   
 
   
@@ -207,6 +207,44 @@
   
 
 
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175233930-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-175233930-1', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
 
 
   
@@ -421,23 +459,6 @@
       
 
       
-      <li class="nav-item dropdown theme-dropdown">
-        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
-          <i class="fas fa-palette" aria-hidden="true"></i>
-        </a>
-        <div class="dropdown-menu">
-          <a href="#" class="dropdown-item js-set-theme-light">
-            <span>Light</span>
-          </a>
-          <a href="#" class="dropdown-item js-set-theme-dark">
-            <span>Dark</span>
-          </a>
-          <a href="#" class="dropdown-item js-set-theme-auto">
-            <span>Automatic</span>
-          </a>
-        </div>
-      </li>
-      
 
       
       <li class="nav-item dropdown i18n-dropdown">
@@ -548,7 +569,7 @@
 
       <div class="portrait-title">
         <h2>Nachiket Kakirde</h2>
-        <h3>Sr. Data Science Manager</h3>
+        <h3>Data Science Manager</h3>
 
         
         <h3>
@@ -951,7 +972,7 @@
   <div class="col-12 col-sm-4">
     <div class="featurette-icon"><i class="fab fa-r-project"></i></div>
     <h3>R</h3>
-    <p>90%</p>
+    <p>Expert</p>
   </div>
   
   
@@ -962,7 +983,7 @@
   <div class="col-12 col-sm-4">
     <div class="featurette-icon"><i class="fab fa-python"></i></div>
     <h3>Python</h3>
-    <p>Handson and production</p>
+    <p>Expert - Hands-on and production</p>
   </div>
   
   
@@ -973,7 +994,7 @@
   <div class="col-12 col-sm-4">
     <div class="featurette-icon"><i class="fas fa-chart-line"></i></div>
     <h3>Statistics</h3>
-    <p>100%</p>
+    <p>Hidden Strength</p>
   </div>
   
   
@@ -993,8 +1014,8 @@
     
   
   <div class="col-12 col-sm-4">
-    <div class="featurette-icon"><i class="fas fa-fa-aws"></i></div>
-    <h3>Forecasting</h3>
+    <div class="featurette-icon"><i class="fab fa-docker"></i></div>
+    <h3>Doker</h3>
     <p>Expert</p>
   </div>
   
@@ -1004,9 +1025,20 @@
     
   
   <div class="col-12 col-sm-4">
-    <div class="featurette-icon"><i class="fas fa-fa-git"></i></div>
+    <div class="featurette-icon"><i class="fab fa-git-square"></i></div>
     <h3>git</h3>
     <p>Expert</p>
+  </div>
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-4">
+    <div class="featurette-icon"><i class="fab fa-aws"></i></div>
+    <h3>AWS</h3>
+    <p>User</p>
   </div>
   
   
@@ -1102,7 +1134,7 @@
 
 <div class="row">
   <div class="col-12 col-lg-4 section-heading">
-    <h1>Recent Posts</h1>
+    <h1>Blog Posts</h1>
     <p>Something interesting</p>
   </div>
   <div class="col-12 col-lg-8">
@@ -1121,34 +1153,13 @@
 
 
 
-
-
-
   
 
 
-<div class="media stream-item">
-  <div class="media-body">
+<div class="card-simple">
 
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/de/post/first-post/" >Writing technical content in Academic</a>
-    </h3>
-
+  
     
-    <div class="article-style">
-      Academic is designed to give technical content creators a seamless experience. You can focus on the content and Academic handles the rest.
-Highlight your code snippets, take notes on math classes, and draw diagrams from textual representation.
-On this page, you&rsquo;ll find some examples of the types of technical content that can be rendered with Academic.
-Main Examples Code Academic supports a Markdown extension for highlighting code syntax. You can enable this feature by toggling the highlight option in your config/_default/params.
-    </div>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
 
 
 <div class="article-metadata">
@@ -1184,16 +1195,97 @@ Main Examples Code Academic supports a Markdown extension for highlighting code 
 
 </div>
 
+  
+
+  
+  
+  
+
+  <h3 class="article-title mb-1 mt-3">
+    <a href="/de/post/first-post/">Writing technical content in Academic</a>
+  </h3>
+
+  
+  <div class="article-style">
+    <p>Academic is designed to give technical content creators a seamless experience. You can focus on the content and Academic handles the rest.
+Highlight your code snippets, take notes on math classes, and draw diagrams from textual representation.
+On this page, you&rsquo;ll find some examples of the types of technical content that can be rendered with Academic.
+Main Examples Code Academic supports a Markdown extension for highlighting code syntax. You can enable this feature by toggling the highlight option in your config/_default/params.</p>
+  </div>
+  
+
+  
+
+</div>
+
       
-    </div>
+    
+      
+        
 
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple">
+
+  
     
 
-  </div>
-  <div class="ml-3">
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
     
     
+      
+    
+    Jun 28, 2018
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+
+  <h3 class="article-title mb-1 mt-3">
+    <a href="/de/post/example/">An example title</a>
+  </h3>
+
+  
+  <div class="article-style">
+    <p>Here we describe how to add a page to your site.</p>
   </div>
+  
+
+  
+
 </div>
 
       
@@ -1263,6 +1355,58 @@ Main Examples Code Academic supports a Markdown extension for highlighting code 
 
     
 
+    
+
+      
+
+      
+      
+      
+      
+        
+      
+
+      <span class="d-none default-project-filter">*</span>
+
+      
+      
+      <div class="project-toolbar">
+        <div class="project-filters">
+          <div class="btn-toolbar">
+            <div class="btn-group flex-wrap">
+              
+                
+                
+                
+                  
+                
+                <a href="#" data-filter="*" class="btn btn-primary btn-lg active">All</a>
+              
+                
+                
+                
+                <a href="#" data-filter=".js-id-Deep-Learning" class="btn btn-primary btn-lg">Deep Learning</a>
+              
+                
+                
+                
+                <a href="#" data-filter=".js-id-Time-Series" class="btn btn-primary btn-lg">Time Series</a>
+              
+                
+                
+                
+                <a href="#" data-filter=".js-id-Optimization" class="btn btn-primary btn-lg">Optimization</a>
+              
+                
+                
+                
+                <a href="#" data-filter=".js-id-Demo" class="btn btn-primary btn-lg">Other</a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      
     
 
     <div class="isotope projects-container js-layout-masonry ">
@@ -1580,7 +1724,7 @@ Main Examples Code Academic supports a Markdown extension for highlighting code 
   <p class="powered-by">
     2020 &middot; 
 
-    Powered by the
+    Brewed with : muscle : and : beer :
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
     <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
 
