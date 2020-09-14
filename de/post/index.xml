@@ -7,7 +7,7 @@
     <description>Posts</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>de-CH</language><copyright>2020</copyright><lastBuildDate>Fri, 12 Jul 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <url>/img/avatar.jpg</url>
       <title>Posts</title>
       <link>/de/post/</link>
     </image>
@@ -236,7 +236,16 @@ A Markdown aside is useful for displaying notices, hints, or definitions to your
       <link>/de/post/example/</link>
       <pubDate>Thu, 28 Jun 2018 00:00:00 +0000</pubDate>
       <guid>/de/post/example/</guid>
-      <description>&lt;p&gt;Add your &lt;em&gt;content&lt;/em&gt; here&amp;hellip;&lt;/p&gt;
+      <description>&lt;h1 id=&#34;add-your-content-here&#34;&gt;Add your &lt;em&gt;content&lt;/em&gt; here&amp;hellip;&lt;/h1&gt;
+&lt;div class=&#34;responsive-wrap&#34;&gt;
+  &lt;iframe src=&#34;https://quizlet.com/440861477/match/embed?i=1nr3ep&amp;amp;x=1jj1&#34; frameborder=&#34;1&#34; width=&#34;1200&#34; height=&#34;500&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;deutsch-ist-einfach-zu-lernen&#34;&gt;Deutsch ist einfach zu lernen!&lt;/h2&gt;
+&lt;div class=&#34;responsive-wrap&#34;&gt;
+  &lt;iframe src=&#34;https://quizlet.com/503112390/flashcards/embed?i=1nr3ep&amp;amp;x=1jj1&#34; frameborder=&#34;1&#34; width=&#34;1200&#34; height=&#34;500&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
 </description>
     </item>
     
