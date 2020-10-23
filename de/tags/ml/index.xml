@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ML | Nachiket Kakirde</title>
+    <link>/de/tags/ml/</link>
+      <atom:link href="/de/tags/ml/index.xml" rel="self" type="application/rss+xml" />
+    <description>ML</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>de-CH</language><copyright>2020</copyright><lastBuildDate>Tue, 15 Sep 2020 01:41:29 +0200</lastBuildDate>
+    <image>
+      <url>/img/avatar.jpg</url>
+      <title>ML</title>
+      <link>/de/tags/ml/</link>
+    </image>
+    
+    <item>
+      <title>Brief</title>
+      <link>/de/talk/brief/</link>
+      <pubDate>Tue, 15 Sep 2020 01:41:29 +0200</pubDate>
+      <guid>/de/talk/brief/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

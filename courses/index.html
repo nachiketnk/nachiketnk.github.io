@@ -209,45 +209,15 @@
 
 
 
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175233930-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-      dataLayer.push(arguments);
-  }
-
-  function trackOutboundLink(url, target) {
-    gtag('event', 'click', {
-         'event_category': 'outbound',
-         'event_label': url,
-         'transport_type': 'beacon',
-         'event_callback': function () {
-           if (target !== '_blank') {
-             document.location = url;
-           }
-         }
-    });
-    console.debug("Outbound link clicked: " + url);
-  }
-
-  function onClickCallback(event) {
-    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
-      return;
-    }
-    trackOutboundLink(event.target, event.target.getAttribute('target'));  
-  }
-
-  gtag('js', new Date());
-  gtag('config', 'UA-175233930-1', {});
-
   
-  document.addEventListener('click', onClickCallback, false);
+<script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NPRLGGL');
 </script>
 
-
-  
 
 
   
@@ -275,7 +245,7 @@
   
   <meta property="og:site_name" content="Nachiket Kakirde">
   <meta property="og:url" content="/courses/">
-  <meta property="og:title" content="Courses | Nachiket Kakirde">
+  <meta property="og:title" content="Learning is Living | Nachiket Kakirde">
   <meta property="og:description" content="Data Science Manager"><meta property="og:image" content="/img/avatar.jpg">
   <meta property="twitter:image" content="/img/avatar.jpg"><meta property="og:locale" content="en-us">
   
@@ -296,7 +266,7 @@
 
 
 
-  <title>Courses | Nachiket Kakirde</title>
+  <title>Learning is Living | Nachiket Kakirde</title>
 
 </head>
 
@@ -415,6 +385,86 @@
         
         
         
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Blog</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/courses/"><span>Courses</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
 
         <li class="nav-item">
           <a class="nav-link " href="/files/CV.pdf"><span>Download CV</span></a>
@@ -483,7 +533,7 @@
     
   
 <div class="universal-wrapper pt-3">
-  <h1>Courses</h1>
+  <h1>Learning is Living</h1>
 
   
 
@@ -497,7 +547,9 @@
   <ul class="list-unstyled">
     
     
-    <li><h5><a href="/courses/example/">An Example Course</a></h5> <p>Learn how to use Academic's docs layout for publishing online courses, software documentation, and tutorials.</p></li>
+    <li><h5><a href="/courses/example/">ABC of python</a></h5> <p>Learn how to change the world step-by-step</p></li>
+    
+    <li><h5><a href="/courses/r/">Learning R</a></h5> <p>R you serious?</p></li>
     
     
   </ul>
@@ -621,8 +673,6 @@
 
   <p class="powered-by">
     2020 &middot; 
-
-    Brewed with : muscle : and : beer :
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
     <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
 

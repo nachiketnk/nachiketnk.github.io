@@ -3,8 +3,68 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/de/authors/admin/</loc>
+    <lastmod>2020-09-15T01:41:29+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/authors/admin/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="/de/authors/admin/"
+                />
+  </url>
+  
+  <url>
+    <loc>/de/authors/</loc>
+    <lastmod>2020-09-15T01:41:29+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/authors/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="/de/authors/"
+                />
+  </url>
+  
+  <url>
+    <loc>/de/talk/brief/</loc>
+    <lastmod>2020-09-15T01:41:29+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/talk/brief/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="/de/talk/brief/"
+                />
+  </url>
+  
+  <url>
+    <loc>/de/tags/ml/</loc>
+    <lastmod>2020-09-15T01:41:29+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/ml/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="/de/tags/ml/"
+                />
+  </url>
+  
+  <url>
     <loc>/de/</loc>
-    <lastmod>2019-07-12T00:00:00+00:00</lastmod>
+    <lastmod>2020-09-15T01:41:29+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -14,6 +74,66 @@
                 rel="alternate"
                 hreflang="de"
                 href="/de/"
+                />
+  </url>
+  
+  <url>
+    <loc>/de/talk/</loc>
+    <lastmod>2020-09-15T01:41:29+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/talk/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="/de/talk/"
+                />
+  </url>
+  
+  <url>
+    <loc>/de/tags/</loc>
+    <lastmod>2020-09-15T01:41:29+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="/de/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>/de/project/forecasting/</loc>
+    <lastmod>2020-09-15T01:34:22+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/project/forecasting/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="/de/project/forecasting/"
+                />
+  </url>
+  
+  <url>
+    <loc>/de/project/</loc>
+    <lastmod>2020-09-15T01:34:22+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/project/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="/de/project/"
                 />
   </url>
   
@@ -35,55 +155,41 @@
   <url>
     <loc>/de/post/first-post/</loc>
     <lastmod>2019-07-12T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/post/first-post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="/de/post/first-post/"
-                />
   </url>
   
   <url>
     <loc>/de/slides/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/slides/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="/de/slides/"
+                />
   </url>
   
   <url>
     <loc>/de/slides/example/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/slides/example/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="/de/slides/example/"
+                />
   </url>
   
   <url>
     <loc>/de/post/example/</loc>
     <lastmod>2018-06-28T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/post/example/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="/de/post/example/"
-                />
-  </url>
-  
-  <url>
-    <loc>/de/authors/admin/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/authors/admin/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="/de/authors/admin/"
-                />
   </url>
   
   <url>
@@ -98,20 +204,6 @@
                 rel="alternate"
                 hreflang="de"
                 href="/de/courses/"
-                />
-  </url>
-  
-  <url>
-    <loc>/de/authors/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/authors/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="/de/authors/"
                 />
   </url>
   
@@ -154,34 +246,6 @@
                 rel="alternate"
                 hreflang="de"
                 href="/de/publication/"
-                />
-  </url>
-  
-  <url>
-    <loc>/de/talk/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/talk/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="/de/talk/"
-                />
-  </url>
-  
-  <url>
-    <loc>/de/tags/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="/de/tags/"
                 />
   </url>
   

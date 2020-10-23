@@ -209,45 +209,15 @@
 
 
 
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175233930-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-      dataLayer.push(arguments);
-  }
-
-  function trackOutboundLink(url, target) {
-    gtag('event', 'click', {
-         'event_category': 'outbound',
-         'event_label': url,
-         'transport_type': 'beacon',
-         'event_callback': function () {
-           if (target !== '_blank') {
-             document.location = url;
-           }
-         }
-    });
-    console.debug("Outbound link clicked: " + url);
-  }
-
-  function onClickCallback(event) {
-    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
-      return;
-    }
-    trackOutboundLink(event.target, event.target.getAttribute('target'));  
-  }
-
-  gtag('js', new Date());
-  gtag('config', 'UA-175233930-1', {});
-
   
-  document.addEventListener('click', onClickCallback, false);
+<script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NPRLGGL');
 </script>
 
-
-  
 
 
   
@@ -279,7 +249,7 @@
   <meta property="og:description" content="Data Science Manager"><meta property="og:image" content="/img/avatar.jpg">
   <meta property="twitter:image" content="/img/avatar.jpg"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2019-07-12T00:00:00&#43;00:00">
+    <meta property="og:updated_time" content="2019-01-01T00:00:00&#43;00:00">
   
 
   
@@ -410,6 +380,86 @@
 
         <li class="nav-item">
           <a class="nav-link " href="/#about" data-target="#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts" data-target="#posts"><span>Blog</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects" data-target="#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/courses/"><span>Courses</span></a>
         </li>
 
         
@@ -666,7 +716,7 @@
     
     <h1>Welcome!</h1>
 
-    <p>Welcome to my digital home. A super curious person with genuine interest to learn new things. I believe it learning is the only thing that can help one grow forever. I consider myself extremely fortunate to witness AI revolution in my everyday work. And yes, one thing that helps me survive apart from food and water is “data”</p>
+    <p>Welcome to my digital home. A super curious person with genuine interest to learn new things. I believe learning is the only thing that can help one grow forever. I consider myself extremely fortunate to witness AI revolution in my everyday work. And yes, one thing that helps me survive with food 🍲 and coffee ☕ is “data” 😉</p>
 
 
     <div class="row">
@@ -684,7 +734,11 @@
           
           <li>Risk Modelling and simulations</li>
           
-          <li>Interactive DataViz and UX</li>
+          <li>Agile Product Management</li>
+          
+          <li>Interactive DataViz</li>
+          
+          <li>User Experience</li>
           
         </ul>
       </div>
@@ -808,11 +862,17 @@
                 <span>Ziegelbrüke, Switzerland</span>
               
             </div>
-            <div class="card-text">Responsibilities include:</p>
+            <div class="card-text"><strong>Responsibilities include:</strong></p>
 <ul>
-<li>ML based Demand Planning</li>
-<li>Timeseries Modelling</li>
-<li>Cost optimization</li>
+<li>Envision, develop and deploy machine learning and advanced analytics-based tools and solutions.</li>
+<li>Measure business value from ad-hoc data analysis, data acquisition, modelling to visualization during typical
+<strong>“Idea-to-Product”</strong> cycle</li>
+<li>Plan the analytics roadmap and drive forward use-case pipeline.</li>
+<li>Implemented Machine Learning based demand forecasting - Pilot markets France and Russia:</li>
+<li>Improved Forecast Accuracy between   <strong>5%-18%</strong> on different forecast granularities across product portfolio</li>
+<li>Reduced obsoletes stocks by   <strong>50%</strong> and sporadic errors by   <strong>75%</strong></li>
+<li>Owned technical product for machine learning model performance and ml pipelines</li>
+<li>Facilitated implementation of tool for 17 markets in Western Europe and Asia.</li>
 </ul></div>
           </div>
         </div>
@@ -850,11 +910,12 @@
                 <span>Zürich, Switzerland</span>
               
             </div>
-            <div class="card-text">Responsibilities include:</p>
+            <div class="card-text"><strong>Responsibilities include:</strong></p>
 <ul>
-<li>Support topic modelling based analysis</li>
-<li>Text and Graph analysis</li>
-<li>Parsing and data collection</li>
+<li>Involved NLP topic modelling-based research – Data collection, modelling and visualization</li>
+<li>Scarped massive data corpus using scrapping techniques and modelling using python and C++</li>
+<li>Visualized graph models for publication purposes using R</li>
+<li>Analysed data using clustering techniques to group keywords and topics using python</li>
 </ul></div>
           </div>
         </div>
@@ -892,11 +953,13 @@
                 <span>Zürich, Switzerland</span>
               
             </div>
-            <div class="card-text">Responsibilities include:</p>
+            <div class="card-text"><strong>Responsibilities include:</strong></p>
 <ul>
-<li>Loan Application Origination</li>
-<li>Change and Process Management</li>
-<li>CI/CD</li>
+<li>Technical owner and Change Manager for private banking loan origination and credit card servicing systems.</li>
+<li>Enforced accurate credit score computation and delivery for loan applications based on real time loan requests
+through local branches.</li>
+<li>Improved change request through process changes to requirement analysis, planning and delivery</li>
+<li>Revised the UAT release with CI/CD implementation and represented the development team in CAB Meetings</li>
 </ul></div>
           </div>
         </div>
@@ -905,45 +968,6 @@
     
     
   </div>
-</div>
-
-    </div>
-  </section>
-
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="custom-widget" class="home-section wg-awesome   "  >
-    <div class="container">
-      <div style="font-size: 2rem; color: blue">
-  
 </div>
 
     </div>
@@ -1013,18 +1037,33 @@
       </div>
     
       <div class="card experience course">
-        <div class="card-body"><a href="https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals" target="_blank" rel="noopener"><h4 class="card-title exp-title text-muted my-0">Blockchain Fundamentals</h4></a><div class="card-subtitle my-0 article-metadata"><a href="https://www.edx.org" target="_blank" rel="noopener">edX</a><span class="middot-divider"></span>
+        <div class="card-body"><h4 class="card-title exp-title text-muted my-0">Carlsberg Expert Program</h4><div class="card-subtitle my-0 article-metadata"><a href="https://www.coursera.org" target="_blank" rel="noopener">Carlsberg</a><span class="middot-divider"></span>
 
-            Mar 2018
+            Mar 2019
+            
+            – Nov 2019
             
           </div>
 
           
-            <div class="card-text">Formulated informed blockchain models, hypotheses, and use cases.</div>
+
+          
+        </div>
+      </div>
+    
+      <div class="card experience course">
+        <div class="card-body"><a href="https://www.ascm.org/learning-development/certifications-credentials/cpim/" target="_blank" rel="noopener"><h4 class="card-title exp-title text-muted my-0">Certified in Production and Inventory Management</h4></a><div class="card-subtitle my-0 article-metadata"><a href="https://www.ascm.org/learning-development/certifications-credentials/cpim/" target="_blank" rel="noopener">APICS</a><span class="middot-divider"></span>
+
+            Dec 2015
+            
+          </div>
+
+          
+            <div class="card-text">Deep understanding of materials management, master scheduling, forecasting, production planning and how it applies across the extended supply chain</div>
           
 
           
-            <a class="card-link" href="https://www.edx.org" target="_blank" rel="noopener">
+            <a class="card-link" href="https://www.ascm.org/learning-development/certifications-credentials/cpim/" target="_blank" rel="noopener">
               See certificate
             </a>
           
@@ -1135,7 +1174,7 @@
   
   <div class="col-12 col-sm-4">
     <div class="featurette-icon"><i class="fab fa-docker"></i></div>
-    <h3>Doker</h3>
+    <h3>Docker</h3>
     <p>Expert</p>
   </div>
   
@@ -1167,11 +1206,312 @@
     
   
   <div class="col-12 col-sm-4">
+    <div class="featurette-icon"><i class="fas fa-users"></i></div>
+    <h3>Agile</h3>
+    <p>Mobile</p>
+  </div>
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-4">
     <div class="featurette-icon"><i class="fas fa-camera-retro"></i></div>
     <h3>Photography</h3>
     <p>Hobbyist</p>
   </div>
   
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="talks" class="home-section wg-pages   "  >
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+<div class="row">
+  <div class="col-12 col-lg-4 section-heading">
+    <h1>Recent &amp; Upcoming Talks</h1>
+    
+  </div>
+  <div class="col-12 col-lg-8">
+
+    
+
+    
+      
+        
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/talk/brief/" >Teaching Machines to Learn</a>
+    </h3>
+
+    
+    <div class="article-style">
+      This presentation will take you through what process of teaching machine to learn
+    </div>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+      <div>
+        <span>
+          Sep 15, 2020 00:00 AM
+        </span>
+        
+      </div>
+      
+
+      
+      <div>
+        
+
+  
+  <span><a href="/authors/admin/">Nachiket Kakirde</a></span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/slides/example/" target="_blank">
+    Slides
+  </a>
+  
+
+
+
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+  </div>
+</div>
+
+      
+    
+      
+        
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/talk/brief-history-of-ai/" >Brief History of AI</a>
+    </h3>
+
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+      <div>
+        <span>
+          Sep 15, 2020 01:41 AM &mdash; 01:41 AM
+        </span>
+        
+      </div>
+      
+
+      
+      <div>
+        
+
+  
+  <span><a href="/authors/admin/">Nachiket Kakirde</a></span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/slides/example/" target="_blank">
+    Slides
+  </a>
+  
+
+
+
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+  </div>
+</div>
+
+      
+    
+
+    
+
+  </div>
 </div>
 
     </div>
@@ -1273,6 +1613,144 @@
 
 
 
+
+<div class="card-simple">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Jul 12, 2019
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    0 min read
+  </span>
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+
+  <h3 class="article-title mb-1 mt-3">
+    <a href="/post/ai/">Brief History of Artificial Intelligence?</a>
+  </h3>
+
+  
+
+  
+
+</div>
+
+      
+    
+      
+        
+
+
+
+
+
+
+
+
+
+
+<div class="card-simple">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Jul 12, 2019
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    0 min read
+  </span>
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+
+  <h3 class="article-title mb-1 mt-3">
+    <a href="/post/ml-intro/">What is Machine Learning?</a>
+  </h3>
+
+  
+
+  
+
+</div>
+
+      
+    
+      
+        
+
+
+
+
+
+
+
+
+
   
 
 
@@ -1322,7 +1800,7 @@
   
 
   <h3 class="article-title mb-1 mt-3">
-    <a href="/post/first-post/">Writing technical content in Academic</a>
+    <a href="/post/technical-writing/">Writing technical content in Academic</a>
   </h3>
 
   
@@ -1395,7 +1873,77 @@ Main Examples Code Academic supports a Markdown extension for highlighting code 
   
 
   <h3 class="article-title mb-1 mt-3">
-    <a href="/post/example/">Deutsch wortsahatz</a>
+    <a href="/post/deep-learning/">Deep Learning</a>
+  </h3>
+
+  
+  <div class="article-style">
+    <p>Learn the vocabulary for Deep Learning and Artificial Neural Networks</p>
+  </div>
+  
+
+  
+
+</div>
+
+      
+    
+      
+        
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Jun 28, 2018
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+
+  <h3 class="article-title mb-1 mt-3">
+    <a href="/post/wortsachatz/">Deutsch wortsahatz</a>
   </h3>
 
   
@@ -1411,6 +1959,13 @@ Main Examples Code Academic supports a Markdown extension for highlighting code 
       
     
 
+    
+    <div class="see-all">
+      <a href="/post/">
+        See all posts
+        <i class="fas fa-angle-right"></i>
+      </a>
+    </div>
     
 
   </div>
@@ -1522,6 +2077,11 @@ Main Examples Code Academic supports a Markdown extension for highlighting code 
                 
                 <a href="#" data-filter=".js-id-Data--Vizualization" class="btn btn-primary btn-lg">Data Vizualization</a>
               
+                
+                
+                
+                <a href="#" data-filter=".js-id-Demo" class="btn btn-primary btn-lg">AI</a>
+              
             </div>
           </div>
         </div>
@@ -1531,9 +2091,145 @@ Main Examples Code Academic supports a Markdown extension for highlighting code 
 
     <div class="isotope projects-container js-layout-masonry ">
       
+
+        
+        
+        
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="project-card project-item isotope-item js-id-deeplearning">
+  <div class="card">
+    
+    <div class="card-text">
+      <h4><a href="/project/deeplearning/" >Deep Neural model to recognize commands</a></h4>
+      
+    </div>
+  </div>
+</div>
+
+        
+
+      
+
+        
+        
+        
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="project-card project-item isotope-item ">
+  <div class="card">
+    
+    <div class="card-text">
+      <h4><a href="/project/forecasting/" >Forecasting</a></h4>
+      
+    </div>
+  </div>
+</div>
+
+        
+
+      
+
+        
+        
+        
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="project-card project-item isotope-item js-id-optimization">
+  <div class="card">
+    
+    <div class="card-text">
+      <h4><a href="/project/optimization/" >Optimization Tool</a></h4>
+      
+    </div>
+  </div>
+</div>
+
+        
+
+      
     </div>
 
   </div>
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="custom-widget" class="home-section wg-awesome   "  >
+    <div class="container">
+      <div style="font-size: 2rem; color: blue">
+  <h2 id="everything-is-awesome">Everything is awesome!</h2>
+
 </div>
 
     </div>
@@ -1597,6 +2293,38 @@ Main Examples Code Academic supports a Markdown extension for highlighting code 
   <div class="col-12 col-lg-8">
     
 
+    
+
+      
+      
+      
+      
+      
+      
+
+      <div class="tag-cloud">
+        
+          
+          
+          
+          <a href="/tags/deeplearning/" style="font-size:2.188045457857207rem">deeplearning</a>
+        
+          
+          
+          
+          <a href="/tags/ml/" style="font-size:2.188045457857207rem">ML</a>
+        
+          
+          
+          
+          <a href="/tags/neural-networks/" style="font-size:0.8rem">Neural Networks</a>
+        
+          
+          
+          
+          <a href="/tags/optimization/" style="font-size:0.8rem">optimization</a>
+        
+      </div>
     
 
   </div>
@@ -1843,8 +2571,6 @@ Main Examples Code Academic supports a Markdown extension for highlighting code 
 
   <p class="powered-by">
     2020 &middot; 
-
-    Brewed with : muscle : and : beer :
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
     <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
 

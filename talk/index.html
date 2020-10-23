@@ -209,45 +209,15 @@
 
 
 
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175233930-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-      dataLayer.push(arguments);
-  }
-
-  function trackOutboundLink(url, target) {
-    gtag('event', 'click', {
-         'event_category': 'outbound',
-         'event_label': url,
-         'transport_type': 'beacon',
-         'event_callback': function () {
-           if (target !== '_blank') {
-             document.location = url;
-           }
-         }
-    });
-    console.debug("Outbound link clicked: " + url);
-  }
-
-  function onClickCallback(event) {
-    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
-      return;
-    }
-    trackOutboundLink(event.target, event.target.getAttribute('target'));  
-  }
-
-  gtag('js', new Date());
-  gtag('config', 'UA-175233930-1', {});
-
   
-  document.addEventListener('click', onClickCallback, false);
+<script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NPRLGGL');
 </script>
 
-
-  
 
 
   
@@ -276,10 +246,10 @@
   <meta property="og:site_name" content="Nachiket Kakirde">
   <meta property="og:url" content="/talk/">
   <meta property="og:title" content="Recent &amp; Upcoming Talks | Nachiket Kakirde">
-  <meta property="og:description" content="Data Science Manager"><meta property="og:image" content="/img/avatar.jpg">
-  <meta property="twitter:image" content="/img/avatar.jpg"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="Data Science Manager"><meta property="og:image" content="/img/20140504_203331.jpg">
+  <meta property="twitter:image" content="/img/20140504_203331.jpg"><meta property="og:locale" content="en-us">
   
-    
+    <meta property="og:updated_time" content="2020-09-15T00:00:00&#43;00:00">
   
 
   
@@ -415,6 +385,86 @@
         
         
         
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Blog</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/courses/"><span>Courses</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
 
         <li class="nav-item">
           <a class="nav-link " href="/files/CV.pdf"><span>Download CV</span></a>
@@ -472,6 +522,15 @@
 
 
 
+<div class="article-header">
+  
+  
+  <img src="/img/20140504_203331.jpg" class="article-banner" alt="">
+  
+
+  
+</div>
+
 
 
 
@@ -498,6 +557,193 @@
 
       
 
+      
+      <div class="row" id="talk_list">
+        <div class="col-lg-2">
+          <h3>2020</h3>
+        </div>
+        <div class="col-lg-10">
+
+          
+            
+              
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+<div class="card-simple">
+
+  
+  <div class="article-metadata">
+    
+    <div>
+      
+
+  
+  <span><a href="/authors/admin/">Nachiket Kakirde</a></span>
+    </div>
+    
+    <span>
+      Sep 15, 2020 00:00 AM
+    </span>
+    
+  </div>
+  
+
+  
+  
+  
+
+  <h3 class="article-title mb-1 mt-3">
+    <a href="/talk/brief/">Teaching Machines to Learn</a>
+  </h3>
+
+  
+  <div class="article-style">
+    <p>This presentation will take you through what process of teaching machine to learn</p>
+  </div>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/slides/example/" target="_blank">
+    Slides
+  </a>
+  
+
+
+
+
+
+
+  </div>
+  
+
+</div>
+
+            
+          
+            
+              
+
+
+
+
+
+  
+
+
+
+
+
+
+<div class="card-simple">
+
+  
+  <div class="article-metadata">
+    
+    <div>
+      
+
+  
+  <span><a href="/authors/admin/">Nachiket Kakirde</a></span>
+    </div>
+    
+    <span>
+      Sep 15, 2020 01:41 AM &mdash; 01:41 AM
+    </span>
+    
+  </div>
+  
+
+  
+  
+  
+
+  <h3 class="article-title mb-1 mt-3">
+    <a href="/talk/brief-history-of-ai/">Brief History of AI</a>
+  </h3>
+
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/slides/example/" target="_blank">
+    Slides
+  </a>
+  
+
+
+
+
+
+
+  </div>
+  
+
+</div>
+
+            
+          
+
+        </div>
+      </div>
       
 
     </div>
@@ -623,8 +869,6 @@
 
   <p class="powered-by">
     2020 &middot; 
-
-    Brewed with : muscle : and : beer :
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
     <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
 

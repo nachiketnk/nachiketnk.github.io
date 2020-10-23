@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects | Nachiket Kakirde</title>
+    <link>/project/</link>
+      <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Projects</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2020</copyright><lastBuildDate>Tue, 15 Sep 2020 01:34:22 +0200</lastBuildDate>
+    <image>
+      <url>/img/avatar.jpg</url>
+      <title>Projects</title>
+      <link>/project/</link>
+    </image>
+    
+    <item>
+      <title>Deep Neural model to recognize commands</title>
+      <link>/project/deeplearning/</link>
+      <pubDate>Tue, 15 Sep 2020 01:34:22 +0200</pubDate>
+      <guid>/project/deeplearning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Forecasting</title>
+      <link>/project/forecasting/</link>
+      <pubDate>Tue, 15 Sep 2020 01:34:22 +0200</pubDate>
+      <guid>/project/forecasting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Optimization Tool</title>
+      <link>/project/optimization/</link>
+      <pubDate>Tue, 15 Sep 2020 01:34:22 +0200</pubDate>
+      <guid>/project/optimization/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

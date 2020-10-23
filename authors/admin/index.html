@@ -209,45 +209,15 @@
 
 
 
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175233930-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-      dataLayer.push(arguments);
-  }
-
-  function trackOutboundLink(url, target) {
-    gtag('event', 'click', {
-         'event_category': 'outbound',
-         'event_label': url,
-         'transport_type': 'beacon',
-         'event_callback': function () {
-           if (target !== '_blank') {
-             document.location = url;
-           }
-         }
-    });
-    console.debug("Outbound link clicked: " + url);
-  }
-
-  function onClickCallback(event) {
-    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
-      return;
-    }
-    trackOutboundLink(event.target, event.target.getAttribute('target'));  
-  }
-
-  gtag('js', new Date());
-  gtag('config', 'UA-175233930-1', {});
-
   
-  document.addEventListener('click', onClickCallback, false);
+<script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NPRLGGL');
 </script>
 
-
-  
 
 
   
@@ -279,7 +249,7 @@
   <meta property="og:description" content="Data Science Manager"><meta property="og:image" content="/img/avatar.jpg">
   <meta property="twitter:image" content="/img/avatar.jpg"><meta property="og:locale" content="en-us">
   
-    
+    <meta property="og:updated_time" content="2020-09-15T00:00:00&#43;00:00">
   
 
   
@@ -396,6 +366,86 @@
 
         <li class="nav-item">
           <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Blog</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/courses/"><span>Courses</span></a>
         </li>
 
         
@@ -606,7 +656,7 @@
     
     
 
-    <p>Welcome to my digital home. A super curious person with genuine interest to learn new things. I believe it learning is the only thing that can help one grow forever. I consider myself extremely fortunate to witness AI revolution in my everyday work. And yes, one thing that helps me survive apart from food and water is “data”</p>
+    <p>Welcome to my digital home. A super curious person with genuine interest to learn new things. I believe learning is the only thing that can help one grow forever. I consider myself extremely fortunate to witness AI revolution in my everyday work. And yes, one thing that helps me survive with food 🍲 and coffee ☕ is “data” 😉</p>
 
 
     <div class="row">
@@ -624,7 +674,11 @@
           
           <li>Risk Modelling and simulations</li>
           
-          <li>Interactive DataViz and UX</li>
+          <li>Agile Product Management</li>
+          
+          <li>Interactive DataViz</li>
+          
+          <li>User Experience</li>
           
         </ul>
       </div>
@@ -671,6 +725,29 @@
 
     
     
+    
+    <div class="article-widget content-widget-hr">
+      <h3>Latest</h3>
+      <ul>
+        
+        <li>
+          <a href="/talk/brief/">Teaching Machines to Learn</a>
+        </li>
+        
+        <li>
+          <a href="/talk/brief-history-of-ai/">Brief History of AI</a>
+        </li>
+        
+        <li>
+          <a href="/project/deeplearning/">Deep Neural model to recognize commands</a>
+        </li>
+        
+        <li>
+          <a href="/project/optimization/">Optimization Tool</a>
+        </li>
+        
+      </ul>
+    </div>
     
   </div>
 </section>
@@ -793,8 +870,6 @@
 
   <p class="powered-by">
     2020 &middot; 
-
-    Brewed with : muscle : and : beer :
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
     <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
 

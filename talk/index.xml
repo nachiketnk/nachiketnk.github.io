@@ -5,12 +5,28 @@
     <link>/talk/</link>
       <atom:link href="/talk/index.xml" rel="self" type="application/rss+xml" />
     <description>Recent &amp; Upcoming Talks</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2020</copyright>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2020</copyright><lastBuildDate>Tue, 15 Sep 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/img/avatar.jpg</url>
+      <url>/img/20140504_203331.jpg</url>
       <title>Recent &amp; Upcoming Talks</title>
       <link>/talk/</link>
     </image>
+    
+    <item>
+      <title>Teaching Machines to Learn</title>
+      <link>/talk/brief/</link>
+      <pubDate>Tue, 15 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/talk/brief/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Brief History of AI</title>
+      <link>/talk/brief-history-of-ai/</link>
+      <pubDate>Tue, 15 Sep 2020 01:41:29 +0200</pubDate>
+      <guid>/talk/brief-history-of-ai/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

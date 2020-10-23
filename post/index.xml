@@ -13,10 +13,26 @@
     </image>
     
     <item>
-      <title>Writing technical content in Academic</title>
-      <link>/post/first-post/</link>
+      <title>Brief History of Artificial Intelligence?</title>
+      <link>/post/ai/</link>
       <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>/post/first-post/</guid>
+      <guid>/post/ai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>What is Machine Learning?</title>
+      <link>/post/ml-intro/</link>
+      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>/post/ml-intro/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Writing technical content in Academic</title>
+      <link>/post/technical-writing/</link>
+      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>/post/technical-writing/</guid>
       <description>&lt;p&gt;Academic is designed to give technical content creators a seamless experience. You can focus on the content and Academic handles the rest.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Highlight your code snippets, take notes on math classes, and draw diagrams from textual representation.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;On this page, you&amp;rsquo;ll find some examples of the types of technical content that can be rendered with Academic.&lt;/p&gt;
@@ -232,16 +248,61 @@ A Markdown aside is useful for displaying notices, hints, or definitions to your
     </item>
     
     <item>
-      <title>Deutsch wortsahatz</title>
-      <link>/post/example/</link>
+      <title>Deep Learning</title>
+      <link>/post/deep-learning/</link>
       <pubDate>Thu, 28 Jun 2018 00:00:00 +0000</pubDate>
-      <guid>/post/example/</guid>
+      <guid>/post/deep-learning/</guid>
+      <description>&lt;p&gt;Handpicked selection of keywords and  vocabulary for deep learning into a nice flashcard format
+&lt;div class=&#34;responsive-wrap&#34;&gt;
+  &lt;iframe src=&#34;https://quizlet.com/526761264/flashcards/embed?i=1nr3ep&amp;amp;x=1jj1&#34; frameborder=&#34;1&#34; width=&#34;1200&#34; height=&#34;500&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Deutsch wortsahatz</title>
+      <link>/post/wortsachatz/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>/post/wortsachatz/</guid>
       <description>&lt;h2 id=&#34;deutsch-ist-einfach-zu-lernen&#34;&gt;Deutsch ist einfach zu lernen!&lt;/h2&gt;
 &lt;div class=&#34;responsive-wrap&#34;&gt;
   &lt;iframe src=&#34;https://quizlet.com/503112390/flashcards/embed?i=1nr3ep&amp;amp;x=1jj1&#34; frameborder=&#34;1&#34; width=&#34;1200&#34; height=&#34;500&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/post/timeseries/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/post/timeseries/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/post/timeseries4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/post/timeseries4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/post/timeseries5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/post/timeseries5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/post/tool/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/post/tool/</guid>
+      <description></description>
     </item>
     
   </channel>
